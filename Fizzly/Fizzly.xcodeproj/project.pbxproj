@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F20844B26A0A02BE0A4F740 /* Pods_FizzlyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D0DD8377F916E0B9A46AD1 /* Pods_FizzlyTests.framework */; };
+		1762D14B814B53D0D3EFEF17 /* Pods_FizzlyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85258B742BE86892E4C16AEA /* Pods_FizzlyUITests.framework */; };
+		3565CE3C98C7ABC5C6CCF299 /* Pods_Fizzly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50335A2E9DABBD41EABA7443 /* Pods_Fizzly.framework */; };
+		405D2AEB203B7CDC009E0005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D2AEA203B7CDC009E0005 /* AppDelegate.swift */; };
+		405D2AED203B7CDC009E0005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D2AEC203B7CDC009E0005 /* ViewController.swift */; };
+		405D2AF0203B7CDC009E0005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405D2AEE203B7CDC009E0005 /* Main.storyboard */; };
+		405D2AF2203B7CDC009E0005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 405D2AF1203B7CDC009E0005 /* Assets.xcassets */; };
+		405D2AF5203B7CDC009E0005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405D2AF3203B7CDC009E0005 /* LaunchScreen.storyboard */; };
+		405D2B00203B7CDC009E0005 /* FizzlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D2AFF203B7CDC009E0005 /* FizzlyTests.swift */; };
+		405D2B0B203B7CDC009E0005 /* FizzlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D2B0A203B7CDC009E0005 /* FizzlyUITests.swift */; };
+		405D2B1B203B8346009E0005 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D2B1A203B8346009E0005 /* SnapshotHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		405D2AFC203B7CDC009E0005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 405D2ADF203B7CDC009E0005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 405D2AE6203B7CDC009E0005;
+			remoteInfo = Fizzly;
+		};
+		405D2B07203B7CDC009E0005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 405D2ADF203B7CDC009E0005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 405D2AE6203B7CDC009E0005;
+			remoteInfo = Fizzly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16A4C9C8B439CB1A545FF697 /* Pods-Fizzly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fizzly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fizzly/Pods-Fizzly.debug.xcconfig"; sourceTree = "<group>"; };
+		405D2AE7203B7CDC009E0005 /* Fizzly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fizzly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		405D2AEA203B7CDC009E0005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		405D2AEC203B7CDC009E0005 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		405D2AEF203B7CDC009E0005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		405D2AF1203B7CDC009E0005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		405D2AF4203B7CDC009E0005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		405D2AF6203B7CDC009E0005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		405D2AFB203B7CDC009E0005 /* FizzlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		405D2AFF203B7CDC009E0005 /* FizzlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzlyTests.swift; sourceTree = "<group>"; };
+		405D2B01203B7CDC009E0005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		405D2B06203B7CDC009E0005 /* FizzlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		405D2B0A203B7CDC009E0005 /* FizzlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzlyUITests.swift; sourceTree = "<group>"; };
+		405D2B0C203B7CDC009E0005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		405D2B1A203B8346009E0005 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		40A2DABAFD0699F417A03644 /* Pods-FizzlyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FizzlyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FizzlyTests/Pods-FizzlyTests.release.xcconfig"; sourceTree = "<group>"; };
+		499A2EE60D32B448D4BF72FB /* Pods-FizzlyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FizzlyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FizzlyUITests/Pods-FizzlyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		50335A2E9DABBD41EABA7443 /* Pods_Fizzly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fizzly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66D0DD8377F916E0B9A46AD1 /* Pods_FizzlyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FizzlyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85258B742BE86892E4C16AEA /* Pods_FizzlyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FizzlyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE65480A6C3F512EDFFBBBDA /* Pods-FizzlyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FizzlyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FizzlyUITests/Pods-FizzlyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E597359293B03E631A951630 /* Pods-Fizzly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fizzly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fizzly/Pods-Fizzly.release.xcconfig"; sourceTree = "<group>"; };
+		E94CABEB29D5C9E614A656ED /* Pods-FizzlyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FizzlyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FizzlyTests/Pods-FizzlyTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		405D2AE4203B7CDC009E0005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3565CE3C98C7ABC5C6CCF299 /* Pods_Fizzly.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		405D2AF8203B7CDC009E0005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F20844B26A0A02BE0A4F740 /* Pods_FizzlyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		405D2B03203B7CDC009E0005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1762D14B814B53D0D3EFEF17 /* Pods_FizzlyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		405D2ADE203B7CDC009E0005 = {
+			isa = PBXGroup;
+			children = (
+				405D2AE9203B7CDC009E0005 /* Fizzly */,
+				405D2AFE203B7CDC009E0005 /* FizzlyTests */,
+				405D2B09203B7CDC009E0005 /* FizzlyUITests */,
+				405D2AE8203B7CDC009E0005 /* Products */,
+				BF809A2C8A35F9E3DFF97CA6 /* Pods */,
+				F0A102169A79BDA0B804D942 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		405D2AE8203B7CDC009E0005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				405D2AE7203B7CDC009E0005 /* Fizzly.app */,
+				405D2AFB203B7CDC009E0005 /* FizzlyTests.xctest */,
+				405D2B06203B7CDC009E0005 /* FizzlyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		405D2AE9203B7CDC009E0005 /* Fizzly */ = {
+			isa = PBXGroup;
+			children = (
+				405D2AEA203B7CDC009E0005 /* AppDelegate.swift */,
+				405D2AEC203B7CDC009E0005 /* ViewController.swift */,
+				405D2AEE203B7CDC009E0005 /* Main.storyboard */,
+				405D2AF1203B7CDC009E0005 /* Assets.xcassets */,
+				405D2AF3203B7CDC009E0005 /* LaunchScreen.storyboard */,
+				405D2AF6203B7CDC009E0005 /* Info.plist */,
+			);
+			path = Fizzly;
+			sourceTree = "<group>";
+		};
+		405D2AFE203B7CDC009E0005 /* FizzlyTests */ = {
+			isa = PBXGroup;
+			children = (
+				405D2AFF203B7CDC009E0005 /* FizzlyTests.swift */,
+				405D2B01203B7CDC009E0005 /* Info.plist */,
+			);
+			path = FizzlyTests;
+			sourceTree = "<group>";
+		};
+		405D2B09203B7CDC009E0005 /* FizzlyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				405D2B1A203B8346009E0005 /* SnapshotHelper.swift */,
+				405D2B0A203B7CDC009E0005 /* FizzlyUITests.swift */,
+				405D2B0C203B7CDC009E0005 /* Info.plist */,
+			);
+			path = FizzlyUITests;
+			sourceTree = "<group>";
+		};
+		BF809A2C8A35F9E3DFF97CA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16A4C9C8B439CB1A545FF697 /* Pods-Fizzly.debug.xcconfig */,
+				E597359293B03E631A951630 /* Pods-Fizzly.release.xcconfig */,
+				E94CABEB29D5C9E614A656ED /* Pods-FizzlyTests.debug.xcconfig */,
+				40A2DABAFD0699F417A03644 /* Pods-FizzlyTests.release.xcconfig */,
+				499A2EE60D32B448D4BF72FB /* Pods-FizzlyUITests.debug.xcconfig */,
+				DE65480A6C3F512EDFFBBBDA /* Pods-FizzlyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F0A102169A79BDA0B804D942 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50335A2E9DABBD41EABA7443 /* Pods_Fizzly.framework */,
+				66D0DD8377F916E0B9A46AD1 /* Pods_FizzlyTests.framework */,
+				85258B742BE86892E4C16AEA /* Pods_FizzlyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		405D2AE6203B7CDC009E0005 /* Fizzly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 405D2B0F203B7CDC009E0005 /* Build configuration list for PBXNativeTarget "Fizzly" */;
+			buildPhases = (
+				7A0FBCD99629E0348F9EEF57 /* [CP] Check Pods Manifest.lock */,
+				405D2AE3203B7CDC009E0005 /* Sources */,
+				405D2AE4203B7CDC009E0005 /* Frameworks */,
+				405D2AE5203B7CDC009E0005 /* Resources */,
+				5DB5AC334E0FA196C24C1A93 /* [CP] Embed Pods Frameworks */,
+				895C8FE5E7BFD0BA314E3688 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fizzly;
+			productName = Fizzly;
+			productReference = 405D2AE7203B7CDC009E0005 /* Fizzly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		405D2AFA203B7CDC009E0005 /* FizzlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 405D2B12203B7CDC009E0005 /* Build configuration list for PBXNativeTarget "FizzlyTests" */;
+			buildPhases = (
+				9D900527461A38DBFFB65C7B /* [CP] Check Pods Manifest.lock */,
+				405D2AF7203B7CDC009E0005 /* Sources */,
+				405D2AF8203B7CDC009E0005 /* Frameworks */,
+				405D2AF9203B7CDC009E0005 /* Resources */,
+				9E0ED6B9054778A78B43366C /* [CP] Embed Pods Frameworks */,
+				B3F6D837FD9092EFF0F135CD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				405D2AFD203B7CDC009E0005 /* PBXTargetDependency */,
+			);
+			name = FizzlyTests;
+			productName = FizzlyTests;
+			productReference = 405D2AFB203B7CDC009E0005 /* FizzlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		405D2B05203B7CDC009E0005 /* FizzlyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 405D2B15203B7CDC009E0005 /* Build configuration list for PBXNativeTarget "FizzlyUITests" */;
+			buildPhases = (
+				D420F77B2F633CA49B71E6BA /* [CP] Check Pods Manifest.lock */,
+				405D2B02203B7CDC009E0005 /* Sources */,
+				405D2B03203B7CDC009E0005 /* Frameworks */,
+				405D2B04203B7CDC009E0005 /* Resources */,
+				A7036642480142575EF2E224 /* [CP] Embed Pods Frameworks */,
+				30F92FD6A4AA4F33FB05851E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				405D2B08203B7CDC009E0005 /* PBXTargetDependency */,
+			);
+			name = FizzlyUITests;
+			productName = FizzlyUITests;
+			productReference = 405D2B06203B7CDC009E0005 /* FizzlyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		405D2ADF203B7CDC009E0005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Bryce Klinker";
+				TargetAttributes = {
+					405D2AE6203B7CDC009E0005 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					405D2AFA203B7CDC009E0005 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 405D2AE6203B7CDC009E0005;
+					};
+					405D2B05203B7CDC009E0005 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 405D2AE6203B7CDC009E0005;
+					};
+				};
+			};
+			buildConfigurationList = 405D2AE2203B7CDC009E0005 /* Build configuration list for PBXProject "Fizzly" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 405D2ADE203B7CDC009E0005;
+			productRefGroup = 405D2AE8203B7CDC009E0005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				405D2AE6203B7CDC009E0005 /* Fizzly */,
+				405D2AFA203B7CDC009E0005 /* FizzlyTests */,
+				405D2B05203B7CDC009E0005 /* FizzlyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		405D2AE5203B7CDC009E0005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				405D2AF5203B7CDC009E0005 /* LaunchScreen.storyboard in Resources */,
+				405D2AF2203B7CDC009E0005 /* Assets.xcassets in Resources */,
+				405D2AF0203B7CDC009E0005 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		405D2AF9203B7CDC009E0005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		405D2B04203B7CDC009E0005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30F92FD6A4AA4F33FB05851E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FizzlyUITests/Pods-FizzlyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DB5AC334E0FA196C24C1A93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fizzly/Pods-Fizzly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A0FBCD99629E0348F9EEF57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fizzly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		895C8FE5E7BFD0BA314E3688 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fizzly/Pods-Fizzly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D900527461A38DBFFB65C7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FizzlyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E0ED6B9054778A78B43366C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FizzlyTests/Pods-FizzlyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7036642480142575EF2E224 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FizzlyUITests/Pods-FizzlyUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Swifter/Swifter.framework",
+				"${BUILT_PRODUCTS_DIR}/XCTest-Gherkin/XCTest_Gherkin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swifter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCTest_Gherkin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FizzlyUITests/Pods-FizzlyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3F6D837FD9092EFF0F135CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FizzlyTests/Pods-FizzlyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D420F77B2F633CA49B71E6BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FizzlyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		405D2AE3203B7CDC009E0005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				405D2AED203B7CDC009E0005 /* ViewController.swift in Sources */,
+				405D2AEB203B7CDC009E0005 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		405D2AF7203B7CDC009E0005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				405D2B00203B7CDC009E0005 /* FizzlyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		405D2B02203B7CDC009E0005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				405D2B0B203B7CDC009E0005 /* FizzlyUITests.swift in Sources */,
+				405D2B1B203B8346009E0005 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		405D2AFD203B7CDC009E0005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 405D2AE6203B7CDC009E0005 /* Fizzly */;
+			targetProxy = 405D2AFC203B7CDC009E0005 /* PBXContainerItemProxy */;
+		};
+		405D2B08203B7CDC009E0005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 405D2AE6203B7CDC009E0005 /* Fizzly */;
+			targetProxy = 405D2B07203B7CDC009E0005 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		405D2AEE203B7CDC009E0005 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				405D2AEF203B7CDC009E0005 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		405D2AF3203B7CDC009E0005 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				405D2AF4203B7CDC009E0005 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		405D2B0D203B7CDC009E0005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		405D2B0E203B7CDC009E0005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		405D2B10203B7CDC009E0005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16A4C9C8B439CB1A545FF697 /* Pods-Fizzly.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Fizzly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyFizz.Fizzly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		405D2B11203B7CDC009E0005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E597359293B03E631A951630 /* Pods-Fizzly.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Fizzly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyFizz.Fizzly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		405D2B13203B7CDC009E0005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E94CABEB29D5C9E614A656ED /* Pods-FizzlyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FizzlyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyFizz.FizzlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fizzly.app/Fizzly";
+			};
+			name = Debug;
+		};
+		405D2B14203B7CDC009E0005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40A2DABAFD0699F417A03644 /* Pods-FizzlyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FizzlyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyFizz.FizzlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fizzly.app/Fizzly";
+			};
+			name = Release;
+		};
+		405D2B16203B7CDC009E0005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 499A2EE60D32B448D4BF72FB /* Pods-FizzlyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FizzlyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyFizz.FizzlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fizzly;
+			};
+			name = Debug;
+		};
+		405D2B17203B7CDC009E0005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE65480A6C3F512EDFFBBBDA /* Pods-FizzlyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FizzlyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyFizz.FizzlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fizzly;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		405D2AE2203B7CDC009E0005 /* Build configuration list for PBXProject "Fizzly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				405D2B0D203B7CDC009E0005 /* Debug */,
+				405D2B0E203B7CDC009E0005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		405D2B0F203B7CDC009E0005 /* Build configuration list for PBXNativeTarget "Fizzly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				405D2B10203B7CDC009E0005 /* Debug */,
+				405D2B11203B7CDC009E0005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		405D2B12203B7CDC009E0005 /* Build configuration list for PBXNativeTarget "FizzlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				405D2B13203B7CDC009E0005 /* Debug */,
+				405D2B14203B7CDC009E0005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		405D2B15203B7CDC009E0005 /* Build configuration list for PBXNativeTarget "FizzlyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				405D2B16203B7CDC009E0005 /* Debug */,
+				405D2B17203B7CDC009E0005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 405D2ADF203B7CDC009E0005 /* Project object */;
+}
