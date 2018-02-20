@@ -17,7 +17,7 @@ class FizzlyUITests: XCTestCase {
         Given("current value is '3'")
         And("I open fizzly")
         When("I get fizz buzz")
-        Then("I should get 'fizz'")
+        Then("I should get 'Fizz'")
     }
     
 }

@@ -17,15 +17,11 @@ class FizzBuzzStepDefiner : StepDefiner {
     
     override func defineSteps() {
         step("current value is '([0-9]*)'") { (matches: [String]) in
-            do {
-                try self.server.start(9000)
-                
-                self.server.GET["/"] = { r in
-                    let value = matches.first!
-                    return .ok(.text("{ \"value\": \"\(value)\" }"))
-                }
-            } catch {
-                
+            try? self.server.start(9000)
+            
+            self.server[""] = { r in
+                let value = matches.first!
+                return .ok(.text("{ \"value\": \"\(value)\" }"))
             }
         }
         
