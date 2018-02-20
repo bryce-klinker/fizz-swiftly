@@ -16,4 +16,11 @@ class FizzBuzzTests: XCTestCase {
         let actual = fizzBuzz(value: value)
         XCTAssertEqual("Fizz", actual)
     }
+    
+    func testShouldReturnBuzz() {
+        let value = CurrentValue(value: 5)
+        
+        let actual = fizzBuzz(value: value)
+        XCTAssertEqual("Buzz", actual)
+    }
 }
