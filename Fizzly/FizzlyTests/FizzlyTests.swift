@@ -11,7 +11,7 @@ class FizzlyTests: XCTestCase {
         super.tearDown()
     }
     
-    func testShouldShowFizz() {
+    func testShouldShowValue() {
         let service = FakeFizzBuzzService()
         service.setValue(value: CurrentValue(value: 1))
         
@@ -19,6 +19,7 @@ class FizzlyTests: XCTestCase {
         let bundle = Bundle.main
         let storyboard = UIStoryboard(name: "Main", bundle: bundle)
         let controller = storyboard.instantiateInitialViewController() as! FizzBuzzController
+        controller.service = service
         
         window.addSubview(controller.view)
         RunLoop.current.run(until: Date())
