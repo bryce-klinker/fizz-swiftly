@@ -3,7 +3,7 @@ import Foundation
 private let Fizz = "Fizz"
 private let Buzz = "Buzz"
 
-func fizzBuzz(value: CurrentValue) -> String {
+func fizzBuzz(value: FizzBuzzValue) -> String {
     if (isDivisibleByThree(value: value)
         && isDivisibleByFive(value: value)) {
         return "\(Fizz)\(Buzz)"
@@ -20,10 +20,10 @@ func fizzBuzz(value: CurrentValue) -> String {
     return String(value.value)
 }
 
-private func isDivisibleByThree(value: CurrentValue) -> Bool {
+private func isDivisibleByThree(value: FizzBuzzValue) -> Bool {
     return value.value % 3 == 0
 }
 
-private func isDivisibleByFive(value: CurrentValue) -> Bool {
+private func isDivisibleByFive(value: FizzBuzzValue) -> Bool {
     return value.value % 5 == 0
 }

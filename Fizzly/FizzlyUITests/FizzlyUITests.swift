@@ -12,8 +12,7 @@ class FizzlyUITests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
-    
-    
+        
     func testShouldShowFizz() {
         Given("a number web service that returns '3' in a JSON object")
         When("I tap the FizzBuzz button")

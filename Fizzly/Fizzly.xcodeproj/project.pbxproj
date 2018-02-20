@@ -21,7 +21,7 @@
 		40769857203CAB2D001146A8 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40769856203CAB2D001146A8 /* FizzBuzz.swift */; };
 		40769859203CB0D6001146A8 /* FakeFizzBuzzService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40769858203CB0D6001146A8 /* FakeFizzBuzzService.swift */; };
 		4076985C203CBEC2001146A8 /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4076985B203CBEC2001146A8 /* FizzBuzzTests.swift */; };
-		4081EFAA203C8FCF00D40CB7 /* CurrentValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081EFA7203C6C8A00D40CB7 /* CurrentValue.swift */; };
+		4081EFAA203C8FCF00D40CB7 /* FizzBuzzValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081EFA7203C6C8A00D40CB7 /* FizzBuzzValue.swift */; };
 		4081EFAC203C91DB00D40CB7 /* FizzBuzzService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081EFAB203C91DB00D40CB7 /* FizzBuzzService.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +61,7 @@
 		40769856203CAB2D001146A8 /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
 		40769858203CB0D6001146A8 /* FakeFizzBuzzService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeFizzBuzzService.swift; sourceTree = "<group>"; };
 		4076985B203CBEC2001146A8 /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
-		4081EFA7203C6C8A00D40CB7 /* CurrentValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentValue.swift; sourceTree = "<group>"; };
+		4081EFA7203C6C8A00D40CB7 /* FizzBuzzValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzValue.swift; sourceTree = "<group>"; };
 		4081EFAB203C91DB00D40CB7 /* FizzBuzzService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzService.swift; sourceTree = "<group>"; };
 		40A2DABAFD0699F417A03644 /* Pods-FizzlyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FizzlyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FizzlyTests/Pods-FizzlyTests.release.xcconfig"; sourceTree = "<group>"; };
 		499A2EE60D32B448D4BF72FB /* Pods-FizzlyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FizzlyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FizzlyUITests/Pods-FizzlyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		405D2AE9203B7CDC009E0005 /* Fizzly */ = {
 			isa = PBXGroup;
 			children = (
-				4081EFA7203C6C8A00D40CB7 /* CurrentValue.swift */,
+				4081EFA7203C6C8A00D40CB7 /* FizzBuzzValue.swift */,
 				405D2AEA203B7CDC009E0005 /* AppDelegate.swift */,
 				405D2AEC203B7CDC009E0005 /* FizzBuzzController.swift */,
 				405D2AEE203B7CDC009E0005 /* Main.storyboard */,
@@ -484,7 +484,7 @@
 				405D2AED203B7CDC009E0005 /* FizzBuzzController.swift in Sources */,
 				4081EFAC203C91DB00D40CB7 /* FizzBuzzService.swift in Sources */,
 				405D2AEB203B7CDC009E0005 /* AppDelegate.swift in Sources */,
-				4081EFAA203C8FCF00D40CB7 /* CurrentValue.swift in Sources */,
+				4081EFAA203C8FCF00D40CB7 /* FizzBuzzValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,21 +2,21 @@ import Foundation
 @testable import Fizzly
 
 class FakeFizzBuzzService: FizzBuzzService {
-    var currentValue: CurrentValue!
+    var currentValue: FizzBuzzValue!
     
     public init() {
         
     }
     
-    func getValue(completion: @escaping (CurrentValue) -> ()) {
+    func getValue(completion: @escaping (FizzBuzzValue) -> ()) {
         completion(self.currentValue)
     }
     
-    func setValue(value: CurrentValue) {
+    func setValue(value: FizzBuzzValue) {
         currentValue = value
     }
     
     func setValue(value: Int) {
-        currentValue = CurrentValue(value: value)
+        currentValue = FizzBuzzValue(value: value)
     }
 }
