@@ -15,7 +15,6 @@
 		405D2AED203B7CDC009E0005 /* FizzBuzzController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D2AEC203B7CDC009E0005 /* FizzBuzzController.swift */; };
 		405D2AF0203B7CDC009E0005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405D2AEE203B7CDC009E0005 /* Main.storyboard */; };
 		405D2AF2203B7CDC009E0005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 405D2AF1203B7CDC009E0005 /* Assets.xcassets */; };
-		405D2AF5203B7CDC009E0005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405D2AF3203B7CDC009E0005 /* LaunchScreen.storyboard */; };
 		405D2B00203B7CDC009E0005 /* FizzlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D2AFF203B7CDC009E0005 /* FizzlyTests.swift */; };
 		405D2B0B203B7CDC009E0005 /* FizzlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D2B0A203B7CDC009E0005 /* FizzlyUITests.swift */; };
 		405D2B1B203B8346009E0005 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D2B1A203B8346009E0005 /* SnapshotHelper.swift */; };
@@ -50,7 +49,6 @@
 		405D2AEC203B7CDC009E0005 /* FizzBuzzController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzController.swift; sourceTree = "<group>"; };
 		405D2AEF203B7CDC009E0005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		405D2AF1203B7CDC009E0005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		405D2AF4203B7CDC009E0005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		405D2AF6203B7CDC009E0005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		405D2AFB203B7CDC009E0005 /* FizzlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		405D2AFF203B7CDC009E0005 /* FizzlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzlyTests.swift; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 				405D2AEC203B7CDC009E0005 /* FizzBuzzController.swift */,
 				405D2AEE203B7CDC009E0005 /* Main.storyboard */,
 				405D2AF1203B7CDC009E0005 /* Assets.xcassets */,
-				405D2AF3203B7CDC009E0005 /* LaunchScreen.storyboard */,
 				405D2AF6203B7CDC009E0005 /* Info.plist */,
 				4081EFAB203C91DB00D40CB7 /* FizzBuzzService.swift */,
 				40769856203CAB2D001146A8 /* FizzBuzz.swift */,
@@ -299,7 +296,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				405D2AF5203B7CDC009E0005 /* LaunchScreen.storyboard in Resources */,
 				405D2AF2203B7CDC009E0005 /* Assets.xcassets in Resources */,
 				405D2AF0203B7CDC009E0005 /* Main.storyboard in Resources */,
 			);
@@ -530,14 +526,6 @@
 				405D2AEF203B7CDC009E0005 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		405D2AF3203B7CDC009E0005 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				405D2AF4203B7CDC009E0005 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

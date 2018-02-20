@@ -28,6 +28,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byf-Ux-45c">
                                 <rect key="frame" x="164" y="352" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Update"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="updateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="omN-Zn-o0h"/>
