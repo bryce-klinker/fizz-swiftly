@@ -13,11 +13,11 @@ class FizzlyUITests: XCTestCase {
         super.tearDown()
     }
     
+    
     func testShouldShowFizz() {
-        Given("current value is '3'")
-        And("I open fizzly")
-        When("I get fizz buzz")
-        Then("I should get 'Fizz'")
+        Given("a number web service that returns '3' in a JSON object")
+        When("I tap the FizzBuzz button")
+        Then("I see 'Fizz'")
     }
     
 }

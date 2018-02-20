@@ -10,13 +10,14 @@ class FizzBuzzStepDefiner : StepDefiner {
     
     required init(test: XCTestCase) {
         app = XCUIApplication()
+        self.app.launch()
         server = HttpServer()
         
         super.init(test: test)
     }
     
     override func defineSteps() {
-        step("current value is '([0-9]*)'") { (matches: [String]) in
+        step("a number web service that returns '([0-9]*)' in a JSON object") { (matches: [String]) in
             try? self.server.start(9000)
             
             self.server[""] = { r in
@@ -25,16 +26,11 @@ class FizzBuzzStepDefiner : StepDefiner {
             }
         }
         
-        step("I open fizzly") {
-            setupSnapshot(self.app)
-            self.app.launch()
-        }
-        
-        step("I get fizz buzz") {
+        step("I tap the FizzBuzz button") {
             self.app.buttons["Update"].tap()
         }
         
-        step("I should get '(.*)'") { (matches: [String]) in
+        step("I see '(.*)'") { (matches: [String]) in
             XCTAssertTrue(self.app.staticTexts[matches.first!].exists)
         }
     }
