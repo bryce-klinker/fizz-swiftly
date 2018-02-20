@@ -15,7 +15,7 @@ class FizzlyTests: XCTestCase {
         let window = UIWindow()
         let bundle = Bundle.main
         let storyboard = UIStoryboard(name: "Main", bundle: bundle)
-        let controller = storyboard.instantiateViewController(withIdentifier: "FizzBuzzController") as! FizzBuzzController
+        let controller = storyboard.instantiateInitialViewController() as! FizzBuzzController
         let service = FakeFizzBuzzService()
         service.setValue(value: CurrentValue(value: 1))
         
