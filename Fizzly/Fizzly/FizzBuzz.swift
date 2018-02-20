@@ -1,9 +1,9 @@
-//
-//  FizzBuzz.swift
-//  Fizzly
-//
-//  Created by Bryce Klinker on 2/20/18.
-//  Copyright © 2018 Bryce Klinker. All rights reserved.
-//
-
 import Foundation
+
+func fizzBuzz(value: CurrentValue) -> String {
+    if (value.value % 3 == 0) {
+        return "Fizz"
+    } else {
+        return String(value.value)
+    }
+}
