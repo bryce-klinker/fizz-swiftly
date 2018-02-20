@@ -12,14 +12,15 @@
 		3565CE3C98C7ABC5C6CCF299 /* Pods_Fizzly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50335A2E9DABBD41EABA7443 /* Pods_Fizzly.framework */; };
 		4041DE45203C39C500DA9871 /* FizzBuzzStepDefiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4041DE44203C39C500DA9871 /* FizzBuzzStepDefiner.swift */; };
 		405D2AEB203B7CDC009E0005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D2AEA203B7CDC009E0005 /* AppDelegate.swift */; };
-		405D2AED203B7CDC009E0005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D2AEC203B7CDC009E0005 /* ViewController.swift */; };
+		405D2AED203B7CDC009E0005 /* FizzBuzzController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D2AEC203B7CDC009E0005 /* FizzBuzzController.swift */; };
 		405D2AF0203B7CDC009E0005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405D2AEE203B7CDC009E0005 /* Main.storyboard */; };
 		405D2AF2203B7CDC009E0005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 405D2AF1203B7CDC009E0005 /* Assets.xcassets */; };
 		405D2AF5203B7CDC009E0005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405D2AF3203B7CDC009E0005 /* LaunchScreen.storyboard */; };
 		405D2B00203B7CDC009E0005 /* FizzlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D2AFF203B7CDC009E0005 /* FizzlyTests.swift */; };
 		405D2B0B203B7CDC009E0005 /* FizzlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D2B0A203B7CDC009E0005 /* FizzlyUITests.swift */; };
 		405D2B1B203B8346009E0005 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D2B1A203B8346009E0005 /* SnapshotHelper.swift */; };
-		4081EFA9203C6ED400D40CB7 /* CurrentValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081EFA7203C6C8A00D40CB7 /* CurrentValue.swift */; };
+		4081EFAA203C8FCF00D40CB7 /* CurrentValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081EFA7203C6C8A00D40CB7 /* CurrentValue.swift */; };
+		4081EFAC203C91DB00D40CB7 /* FizzBuzzService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081EFAB203C91DB00D40CB7 /* FizzBuzzService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,7 @@
 		4041DE44203C39C500DA9871 /* FizzBuzzStepDefiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzStepDefiner.swift; sourceTree = "<group>"; };
 		405D2AE7203B7CDC009E0005 /* Fizzly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fizzly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		405D2AEA203B7CDC009E0005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		405D2AEC203B7CDC009E0005 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		405D2AEC203B7CDC009E0005 /* FizzBuzzController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzController.swift; sourceTree = "<group>"; };
 		405D2AEF203B7CDC009E0005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		405D2AF1203B7CDC009E0005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		405D2AF4203B7CDC009E0005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		405D2B0C203B7CDC009E0005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		405D2B1A203B8346009E0005 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		4081EFA7203C6C8A00D40CB7 /* CurrentValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentValue.swift; sourceTree = "<group>"; };
+		4081EFAB203C91DB00D40CB7 /* FizzBuzzService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzService.swift; sourceTree = "<group>"; };
 		40A2DABAFD0699F417A03644 /* Pods-FizzlyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FizzlyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FizzlyTests/Pods-FizzlyTests.release.xcconfig"; sourceTree = "<group>"; };
 		499A2EE60D32B448D4BF72FB /* Pods-FizzlyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FizzlyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FizzlyUITests/Pods-FizzlyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		50335A2E9DABBD41EABA7443 /* Pods_Fizzly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fizzly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,12 +122,14 @@
 		405D2AE9203B7CDC009E0005 /* Fizzly */ = {
 			isa = PBXGroup;
 			children = (
+				4081EFA7203C6C8A00D40CB7 /* CurrentValue.swift */,
 				405D2AEA203B7CDC009E0005 /* AppDelegate.swift */,
-				405D2AEC203B7CDC009E0005 /* ViewController.swift */,
+				405D2AEC203B7CDC009E0005 /* FizzBuzzController.swift */,
 				405D2AEE203B7CDC009E0005 /* Main.storyboard */,
 				405D2AF1203B7CDC009E0005 /* Assets.xcassets */,
 				405D2AF3203B7CDC009E0005 /* LaunchScreen.storyboard */,
 				405D2AF6203B7CDC009E0005 /* Info.plist */,
+				4081EFAB203C91DB00D40CB7 /* FizzBuzzService.swift */,
 			);
 			path = Fizzly;
 			sourceTree = "<group>";
@@ -142,7 +146,6 @@
 		405D2B09203B7CDC009E0005 /* FizzlyUITests */ = {
 			isa = PBXGroup;
 			children = (
-				4081EFA7203C6C8A00D40CB7 /* CurrentValue.swift */,
 				405D2B1A203B8346009E0005 /* SnapshotHelper.swift */,
 				405D2B0A203B7CDC009E0005 /* FizzlyUITests.swift */,
 				405D2B0C203B7CDC009E0005 /* Info.plist */,
@@ -334,9 +337,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Fizzly/Pods-Fizzly-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -416,13 +422,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FizzlyUITests/Pods-FizzlyUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Swifter/Swifter.framework",
 				"${BUILT_PRODUCTS_DIR}/XCTest-Gherkin/XCTest_Gherkin.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swifter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCTest_Gherkin.framework",
 			);
@@ -471,8 +475,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				405D2AED203B7CDC009E0005 /* ViewController.swift in Sources */,
+				405D2AED203B7CDC009E0005 /* FizzBuzzController.swift in Sources */,
+				4081EFAC203C91DB00D40CB7 /* FizzBuzzService.swift in Sources */,
 				405D2AEB203B7CDC009E0005 /* AppDelegate.swift in Sources */,
+				4081EFAA203C8FCF00D40CB7 /* CurrentValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +495,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				405D2B0B203B7CDC009E0005 /* FizzlyUITests.swift in Sources */,
-				4081EFA9203C6ED400D40CB7 /* CurrentValue.swift in Sources */,
 				4041DE45203C39C500DA9871 /* FizzBuzzStepDefiner.swift in Sources */,
 				405D2B1B203B8346009E0005 /* SnapshotHelper.swift in Sources */,
 			);

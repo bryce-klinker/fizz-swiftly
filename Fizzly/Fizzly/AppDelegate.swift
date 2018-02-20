@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Fizzly
-//
-//  Created by Bryce Klinker on 2/19/18.
-//  Copyright © 2018 Bryce Klinker. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

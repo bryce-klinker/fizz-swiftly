@@ -2,6 +2,7 @@ import Foundation
 import XCTest
 import XCTest_Gherkin
 import Swifter
+import Fizzly
 
 class FizzBuzzStepDefiner : StepDefiner {
     open let app: XCUIApplication
@@ -20,8 +21,8 @@ class FizzBuzzStepDefiner : StepDefiner {
                 try self.server.start(9000)
                 
                 self.server.GET["/"] = { r in
-                    let value = CurrentValue.fromString(value: matches.first!)
-                    return HttpResponse.ok(HttpResponseBody.json(value))
+                    let value = matches.first!
+                    return .ok(.text("{ \"value\": \"\(value)\" }"))
                 }
             } catch {
                 
