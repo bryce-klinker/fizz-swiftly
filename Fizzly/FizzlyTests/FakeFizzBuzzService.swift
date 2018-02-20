@@ -8,8 +8,8 @@ class FakeFizzBuzzService: FizzBuzzService {
         
     }
     
-    func getValue() -> CurrentValue {
-        return currentValue
+    func getValue(completion: (CurrentValue) -> ()) {
+        completion(self.currentValue)
     }
     
     func setValue(value: CurrentValue) {
