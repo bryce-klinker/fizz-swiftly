@@ -11,8 +11,8 @@ class FizzBuzzStepDefiner : StepDefiner {
     required init(test: XCTestCase) {
         app = XCUIApplication()
         self.app.launch()
-        server = HttpServer()
         
+        server = HttpServer()
         super.init(test: test)
     }
     
