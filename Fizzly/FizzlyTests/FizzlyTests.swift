@@ -12,22 +12,23 @@ class FizzlyTests: XCTestCase {
     }
     
     func testShouldShowFizz() {
+        let service = FakeFizzBuzzService()
+        service.setValue(value: CurrentValue(value: 1))
+        
         let window = UIWindow()
         let bundle = Bundle.main
         let storyboard = UIStoryboard(name: "Main", bundle: bundle)
         let controller = storyboard.instantiateInitialViewController() as! FizzBuzzController
-        let service = FakeFizzBuzzService()
-        service.setValue(value: CurrentValue(value: 1))
         
         window.addSubview(controller.view)
         RunLoop.current.run(until: Date())
-        controller.service = service
+        
         
         XCTAssertEqual(controller.valueLabel.text, "1")
     }
 }
 
-class FakeFizzBuzzService: FizzBuzService {
+class FakeFizzBuzzService: FizzBuzzService {
     var currentValue: CurrentValue!
     
     public init() {

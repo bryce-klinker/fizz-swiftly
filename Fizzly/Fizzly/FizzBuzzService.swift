@@ -1,5 +1,11 @@
 import Foundation
 
-protocol FizzBuzService {
+protocol FizzBuzzService {
     func getValue() -> CurrentValue
+}
+
+class HttpFizzBuzzService: FizzBuzzService {
+    func getValue() -> CurrentValue {
+        return CurrentValue(value: 0)
+    }
 }
