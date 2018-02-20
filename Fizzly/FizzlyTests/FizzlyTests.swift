@@ -19,24 +19,17 @@ class FizzlyTests: XCTestCase {
         service.setValue(value: 1)
         
         let controller = createController()
+        tapUpdateButton(controller: controller)
+        
         XCTAssertEqual(controller.valueLabel.text, "1")
     }
     
     func testShouldShowFizz() {
         service.setValue(value: 3)
         let controller = createController()
-        
-        XCTAssertEqual(controller.valueLabel.text, "Fizz")
-    }
-    
-    func testShouldUpdateToNewValue() {
-        service.setValue(value: 3)
-        let controller = createController()
-        
-        service.setValue(value: CurrentValue(value: 4))
         tapUpdateButton(controller: controller)
         
-        XCTAssertEqual(controller.valueLabel.text, "4")
+        XCTAssertEqual(controller.valueLabel.text, "Fizz")
     }
     
     func createController() -> FizzBuzzController {

@@ -8,7 +8,7 @@ class FakeFizzBuzzService: FizzBuzzService {
         
     }
     
-    func getValue(completion: (CurrentValue) -> ()) {
+    func getValue(completion: @escaping (CurrentValue) -> ()) {
         completion(self.currentValue)
     }
     

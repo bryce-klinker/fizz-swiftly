@@ -19,9 +19,6 @@ class FizzBuzzController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        service!.getValue { value in
-            self.valueLabel!.text = fizzBuzz(value: value)
-        }
     }
 
     override func didReceiveMemoryWarning() {
