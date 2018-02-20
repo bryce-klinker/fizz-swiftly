@@ -3,8 +3,12 @@ import UIKit
 @testable import Fizzly
 
 class FizzlyTests: XCTestCase {
+    var service: FakeFizzBuzzService!
+    
     override func setUp() {
         super.setUp()
+        
+        service = FakeFizzBuzzService()
     }
     
     override func tearDown() {
@@ -12,41 +16,30 @@ class FizzlyTests: XCTestCase {
     }
     
     func testShouldShowValue() {
-        let service = FakeFizzBuzzService()
-        service.setValue(value: CurrentValue(value: 1))
+        service.setValue(value: 1)
         
-        let window = UIWindow()
-        let bundle = Bundle.main
-        let storyboard = UIStoryboard(name: "Main", bundle: bundle)
-        let controller = storyboard.instantiateInitialViewController() as! FizzBuzzController
-        controller.service = service
-        
-        window.addSubview(controller.view)
-        RunLoop.current.run(until: Date())
-        
+        let controller = createController()
         XCTAssertEqual(controller.valueLabel.text, "1")
     }
     
     func testShouldShowFizz() {
-        let service = FakeFizzBuzzService()
-        service.setValue(value: CurrentValue(value: 3))
-        
-        let window = UIWindow()
-        let bundle = Bundle.main
-        let storyboard = UIStoryboard(name: "Main", bundle: bundle)
-        let controller = storyboard.instantiateInitialViewController() as! FizzBuzzController
-        controller.service = service
-        
-        window.addSubview(controller.view)
-        RunLoop.current.run(until: Date())
+        service.setValue(value: 3)
+        let controller = createController()
         
         XCTAssertEqual(controller.valueLabel.text, "Fizz")
     }
     
     func testShouldUpdateToNewValue() {
-        let service = FakeFizzBuzzService()
-        service.setValue(value: CurrentValue(value: 3))
+        service.setValue(value: 3)
+        let controller = createController()
         
+        service.setValue(value: CurrentValue(value: 4))
+        tapUpdateButton(controller: controller)
+        
+        XCTAssertEqual(controller.valueLabel.text, "4")
+    }
+    
+    func createController() -> FizzBuzzController {
         let window = UIWindow()
         let bundle = Bundle.main
         let storyboard = UIStoryboard(name: "Main", bundle: bundle)
@@ -55,12 +48,12 @@ class FizzlyTests: XCTestCase {
         
         window.addSubview(controller.view)
         RunLoop.current.run(until: Date())
-        
-        service.setValue(value: CurrentValue(value: 4))
+        return controller
+    }
+    
+    func tapUpdateButton(controller: FizzBuzzController) {
         controller.updateButton.sendActions(for: .touchUpInside)
         RunLoop.current.run(until: Date())
-        
-        XCTAssertEqual(controller.valueLabel.text, "4")
     }
 }
 
@@ -77,5 +70,9 @@ class FakeFizzBuzzService: FizzBuzzService {
     
     func setValue(value: CurrentValue) {
         currentValue = value
+    }
+    
+    func setValue(value: Int) {
+        currentValue = CurrentValue(value: value)
     }
 }
